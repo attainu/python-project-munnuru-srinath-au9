@@ -170,11 +170,13 @@ def parse_command_line_args(args, configurations) :
             if value != -1  :
                 configurations.set_min_price(value)
         elif "--help" == solve_argument(args[i]) :
-            print("If you want to run this application for long period of time don't give time arugument in command line")
+
             print("-time                      Duration for which the application has to run")
             print("-messages                  Number of messages to be sent at once")
             print("-maxprice                  Price above which the alert has to be sent")
             print("-minprice                  Price below which the alert has to be sent")
+            print("--help                     Displays how to cofigure application using command line arguments\n")
+            print("If you want to run this application for long period of time don't give time arugument in command line")
             
             return -1
         else :
@@ -187,7 +189,7 @@ def parse_command_line_args(args, configurations) :
 if __name__ == "__main__" :
     #global menu
     print(menu)
-    configurations = Configuration(-1, 5, 12000, 10000)
+    configurations = Configuration(-1, 5, 10000, 12000)
     args = sys.argv
     if 1 == parse_command_line_args(args, configurations) :
         configurations.print_configurations()
