@@ -24,13 +24,13 @@
 ### <b>-time ,time in seconds that the program needs to end</b>
 ### <b>-messages, number of messages that a user wants to get in telegram</b>
 ### <b>-maxprice, maximum price of bitcoin according to user</b>
-### <b>-minprice, minimum price of bitcoin accorting to user</b>
+### <b>-minprice, minimum price of bitcoin according to user</b>
 ### threading library is used to add a timer so the the program ends after the user given time
 
 ## Work Flow :
 ### Fisrt the user have to give command line arguments as mentioned in dependencies, according to those argument values we will send notifications to user. If the user don't want to give any command line arguments then the default values will be taken and the notifications will be sent to user as per those default calues
 ### The applications firstly runs by fetching the bitcoin price value from "https://api.coindesk.com/v1/bpi/currentprice.json" this server using requests.get() method .
-### The next step is to create IFTT(if this, then that) applets. We need three applets, first One is for sending emergency notification from IFTT app if the bitcoin price is below minimum price given by the user, second one is for sending emergency notification from IFTTT app if the bitcoin price is above maximum price given by user and the last applet is for sending regular price updates to user as a message in telegram
+### The next step is to create IFTTT(if this, then that) applets. We need three applets, first One is for sending emergency notification from IFTTT app if the bitcoin price is below minimum price given by the user, second one is for sending emergency notification from IFTTT app if the bitcoin price is above maximum price given by user and the last applet is for sending regular price updates to user as a message in telegram
 ### After this it will check the bitcoin price value with the maximum bitcoin price and minimum bitcoin price given by user . If the bitcoin price is less than minimum price given by user then we will send a notification from IFTTT app and same for maximum price. We will send the regular price updates of bitcoin as a message in telegram
 
 ## Output :
