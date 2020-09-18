@@ -176,7 +176,7 @@ def parse_command_line_args(args, configurations) :
             print("-maxprice                  Price above which the alert has to be sent")
             print("-minprice                  Price below which the alert has to be sent")
             print("--help                     Displays how to cofigure application using command line arguments\n")
-            print("If you want to run this application for long period of time don't give time arugument in command line")
+            print("If you want to run this application for Infinite time of time don't give time arugument in command line")
             
             return -1
         else :
