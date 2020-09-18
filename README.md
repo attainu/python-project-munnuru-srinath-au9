@@ -8,7 +8,7 @@
 ### 1) Python 3.8
 ### 2) HTTPS
 ### 3) Webhooks
-### 4) Messaging pltforms like telegram, IFTT
+### 4) Messaging pltforms like telegram, IFTTT
 ## API References :
 ### Coindesk
 ### IFTTT API References
