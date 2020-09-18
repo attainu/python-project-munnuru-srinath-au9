@@ -13,7 +13,7 @@
 ### Coindesk
 ### IFTTT API References
 
-![image](Screenshot (116).png)
+![image](https://github.com/attainu/python-project-munnuru-srinath-au9/blob/dev/Screen_shots/Screenshot%20(116).png)
 
 ## Dependencies :
 ### In this project we need to import requests library and time library. "requests" library is used to make an htttp(hyper text transfer protocol) request to a server so that we can get data from the sever using requests.get() method , post data to user using requests.post() method, update data at server using requests.update() method and we can delete data using requests.delete() method
